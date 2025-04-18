@@ -23,7 +23,7 @@ server.use(mainRoutes);
 
 //Pagina nao encontrada.
 server.use((req, res) => {
-    res.send("Página Não Encontrada.");
+    res.render('pages/404');
 });
 
 //Definindo a porta para o servidor buscando do arquivo .env
