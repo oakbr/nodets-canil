@@ -8,6 +8,7 @@ export const search = (req: Request, res: Response) => {
     
     let query: string = req.query.q as string;
 
+    //Caso não houver query vai para página inicial = home
     if(!query){
         res.redirect('/');
         return;
